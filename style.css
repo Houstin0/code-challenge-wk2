@@ -1,3 +1,30 @@
+body{
+    margin: 0;
+}
 h1,h2{
     text-align: center;
+}
+#characters{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.character{
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #080808;
+    border-radius: 5px;
+    text-align: center;
+}
+.character img{
+    max-width: 100%;
+}
+.character-name{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.character-votes{
+    margin-top: 5px;
+    color: #585151;
 }
