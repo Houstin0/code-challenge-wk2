@@ -4,7 +4,6 @@ fetch('db.json')
 .then(data=>{
     const characterContainer=document.getElementById('characters')
 
-
 //loop through each character and create a card to display it
 data.characters.forEach(characters=>{
     const characterCard=document.createElement('div')
@@ -16,8 +15,6 @@ data.characters.forEach(characters=>{
     const characterName =document.createElement('div')
     characterName.classList.add('character-name')
     characterName.textContent=characters.name 
-
-   
 
     const characterVotes=document.createElement('div')
     characterVotes.classList.add('character-votes')
