@@ -28,3 +28,5 @@ data.characters.forEach(characters=>{
     characterContainer.appendChild(characterCard)
 })
 })
+
+//
