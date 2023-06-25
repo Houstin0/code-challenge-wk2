@@ -29,4 +29,6 @@ data.characters.forEach(characters=>{
 })
 })
 
-//
+//fuction to display the details of a character
+function characterDetails(character){
+} 
