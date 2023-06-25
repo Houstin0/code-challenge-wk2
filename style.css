@@ -13,12 +13,12 @@ h1,h2{
     width: 300px;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #080808;
+    border: 1px solid #41b41e;
     border-radius: 5px;
     text-align: center;
 }
 .character img{
-    max-width: 100%;
+    max-width: 50%;
 }
 .character-name{
     margin-top: 10px;
@@ -26,5 +26,5 @@ h1,h2{
 }
 .character-votes{
     margin-top: 5px;
-    color: #585151;
+    color: #0c0c0c;
 }
