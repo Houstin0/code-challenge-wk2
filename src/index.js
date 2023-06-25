@@ -11,7 +11,7 @@ data.characters.forEach(characters=>{
     characterCard.classList.add('character')
 
     const characterImage=document.createElement('img')
-    characterImage.src=characters.characterImage
+    characterImage.src=characters.image
 
     const characterName =document.createElement('div')
     characterName.classList.add('character-name')
