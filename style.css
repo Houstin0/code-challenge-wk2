@@ -2,7 +2,7 @@ h1,h2{
     text-align: center;
 }
 #characters{
-    justify-content: center;
+    align-items: center;
     max-width: 500px;
     padding-left: 500px;
 }
@@ -16,7 +16,7 @@ h1,h2{
 .character:hover{
     background-color: #9c0c0c;
 }
-.character img{
+.character image{
     max-width: 50%;
 }
 .character-name{
@@ -26,7 +26,4 @@ h1,h2{
 .character-votes{
     margin-top: 5px;
     color: #9c0c0c;
-}
-.details{
-    background-color: blue;
 }
