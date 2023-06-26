@@ -13,6 +13,9 @@ h1,h2{
     border: 1px solid #050505fa;
     text-align: center;
 }
+.character:hover{
+    background-color: #9c0c0c;
+}
 .character img{
     max-width: 50%;
 }
