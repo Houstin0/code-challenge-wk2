@@ -1,10 +1,10 @@
 // fetch the characters data from the api
 function fetchCharacterData(){
-return fetch(' db.json')
-.then(response=>response.json())
-.then(data=>{
+return fetch("db.json")
+.then((response)=>response.json())
+.then((data)=>{
     const characterContainer=document.getElementById('characters')
-    const detailsContainers=document.getElementById('charactersDetails')
+    
 
 //loop through each character and create a card to display it
    data.characters.forEach(characters =>{
@@ -13,17 +13,17 @@ return fetch(' db.json')
     
     characterName.textContent=characters.name
 
-    characterName.addEventListener("click",()=>{
-    characterDetails(characters)
+    characterName.addEventListener("click",(e)=>{
+        return characterDetails(characters)
    })
 
     characterContainer.appendChild(characterName) 
   })
-})
+ })
 }
 //fuction to display the details of a character
 function characterDetails(characters){
-   
+    const detailsContainers=document.getElementById('charactersDetails')
     detailsContainers.innerHTML=""
 
     const characterImage=document.createElement('img')
@@ -43,13 +43,13 @@ function characterDetails(characters){
         characterVotes.innerText= `Votes:${characters.votes}`
     })
 
-    const detailsContainers=document.createElement('div')
-    detailsContainers.classList.add('details')
-    detailsContainers.appendChild(characterImage)
-    detailsContainers.appendChild(characterVotes)
-    detailsContainers.appendChild(voteButton)
+    const details=document.createElement('div')
+    details.classList.add('detail')
+    details.appendChild(characterImage)
+    details.appendChild(characterVotes)
+    details.appendChild(voteButton)
     
-detailsContainer.appendChild(detailsContainers)  
+    detailsContainers.appendChild(details)  
 }
 //fetch character data and render the character list on page load
    window.addEventListener('DOMContentLoaded',() => {
