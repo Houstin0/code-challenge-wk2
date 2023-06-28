@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         
       });
-      //
+      //function to display details
       function characterDetails(character) {
         // Clear previous details
         detailsContainer.innerHTML = '';
@@ -36,15 +36,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const votesElement = document.createElement('p');
         votesElement.textContent = `Votes: ${character.votes}`;
         detailsContainer.appendChild(votesElement);
-        
-        
-        
-        
+
+        const voteButton=document.createElement("button")
+        voteButton.textContent="vote"
+        detailsContainer.appendChild(voteButton)
+
+        voteButton.addEventListener("click",()=>{
+          character.votes++;// increments the vote count
+          votesElement.textContent=`votes:${character.votes}`
+        })
       }
     });
-    
-    //
- 
-  
-
 })
