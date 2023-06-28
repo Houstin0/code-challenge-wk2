@@ -1,0 +1,9 @@
+body{
+    background-color: darkgrey;
+}
+#characterDetails{
+    max-width: min-content;
+}
+h1,h2{
+    text-align: center;
+}
